@@ -24,18 +24,17 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         version: 12
-        
     - name: GitHub Action for Yarn
       uses: Borales/actions-yarn@v2.1.0
       with:
-       # Yarn command
-       cmd: install
-       
-    - name: Creating Build
+        # Yarn command
+        cmd: install
+      
+    - name: Creating build
       run: yarn build
-       
-    - name: Installing Surge
+    
+    - name : installing surge
       run: npm install -g surge
-       
-    - name: Deploying on surge
-      run: surge ./build http://zubair-bootcamp2020-react-app.surge.sh --token${{secrets.SURGE_TOKEN}}
+    
+    - name: deploying on surge
+      run: surge ./build http://zubair-bootcamp2020-react-app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
