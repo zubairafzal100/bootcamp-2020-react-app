@@ -26,10 +26,10 @@ jobs:
         version: 12
         
     - name: GitHub Action for Yarn
-      uses: Borales/actions-yarn@v2.1.0
+      uses: Borales/actions-yarn@v2.3.0
       with:
        # Yarn command
-       cmd: Insatall
+       cmd: insatall
        
     - name: Creating Build
       run: yarn build
