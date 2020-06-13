@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import MyInfo from './info.js';
 
 function App() {
   return (
     <div className="App">
-      <MyInfo myName="Zubair Afzal" myEdu="MCS"/>
+      <h1>Hello World! React App made by Zubair Afzal</h1>
     </div>
   );
 }
